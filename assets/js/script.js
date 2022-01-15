@@ -191,6 +191,10 @@ var tasks = [
 
 ];
 
+var saveTasks = function() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
 var taskDataObj = {
   name: taskNameInput,
   type: taskTypeInput,
